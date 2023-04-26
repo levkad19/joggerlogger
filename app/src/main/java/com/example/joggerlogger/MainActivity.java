@@ -73,17 +73,18 @@ public class MainActivity extends AppCompatActivity {
             //Countdown.setVisibility(View.INVISIBLE);
 
                 if (currentTimer < 3 && timer != 0) {
+                    mp.start();
                     if(currentTimer==0){
                         timer = Integer.parseInt(timer1.getText().toString());
-                        mp.start();
+
                     }
                     if (currentTimer == 1) {
                         timer = Integer.parseInt(timer2.getText().toString());
-                        mp.start();
+
                     }
                     if (currentTimer == 2) {
                         timer = Integer.parseInt(timer3.getText().toString());
-                        mp.start();
+
                     }
                     countdown(timer+1);
                     i++;
